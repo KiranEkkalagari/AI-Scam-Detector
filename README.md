@@ -1,100 +1,42 @@
-# 🛡️ AI Scam Detector
+# AI Scam Detector
 
-An AI-powered web application that detects scam messages from text or screenshots using Machine Learning and OCR.
+## Overview
+AI Scam Detector is a Flask-based web application that detects scam messages using Machine Learning and OCR (Optical Character Recognition).
 
-## 🚀 Features
+## Features
+- Detects scam and safe messages
+- OCR support for extracting text from images
+- User-friendly web interface
+- Machine Learning based prediction
 
-- Detects Scam / Safe messages
-- OCR support for image screenshots
-- Confidence score
-- Scam type detection
-- Safety tips for users
-- Simple and responsive web interface
-
----
-
-## 🛠️ Technologies Used
-
+## Technologies Used
 - Python
 - Flask
-- HTML5
-- CSS3
 - Scikit-learn
 - Pandas
+- HTML
+- CSS
 - Tesseract OCR
-- pytesseract
-- Pillow (PIL)
 
----
-
-## 📂 Project Structure
-
-```
+## Project Structure
 AI-Scam-Detector/
-│
 ├── static/
-│   └── style.css
 ├── templates/
-│   └── index.html
 ├── uploads/
 ├── main.py
 ├── ocr.py
-├── scam_dataset.csv
-└── README.md
-```
+├── requirements.txt
+└── scam_dataset.csv
 
----
+## How to Run
 
-## ⚙️ Installation
-
-1. Clone the repository
-
-```
-git clone https://github.com/YOUR_USERNAME/AI-Scam-Detector.git
-```
-
-2. Install dependencies
-
-```
+```bash
 pip install -r requirements.txt
-```
-
-3. Run the application
-
-```
 python main.py
 ```
 
-4. Open
-
-```
+Open:
 http://127.0.0.1:5000
-```
 
----
-
-## 📸 Features Demonstration
-
-- Text Scam Detection
-- Screenshot OCR Detection
-- Confidence Score
-- Scam Type Classification
-
----
-
-## 🔮 Future Improvements
-
-- Larger Dataset
-- TF-IDF + Logistic Regression
-- Gemini AI Integration
-- URL Detection
-- Email Scam Detection
-- History Dashboard
-
----
-
-## 👨‍💻 Developer
-
-**Ekkalagari Kiran**
-
-ECE Student | Python | Machine Learning | Flask
+## Author
+**Kiran Ekkalagari** Python | Machine Learning | Flask
