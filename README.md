@@ -1,42 +1,105 @@
-# AI Scam Detector
+# 🛡️ AI Scam Detector
 
-## Overview
-AI Scam Detector is a Flask-based web application that detects scam messages using Machine Learning and OCR (Optical Character Recognition).
+An AI-powered web application that detects scam messages from **SMS, WhatsApp, Emails, and Screenshots** using **Machine Learning** and **OCR (Optical Character Recognition)**.
 
-## Features
-- Detects scam and safe messages
-- OCR support for extracting text from images
-- User-friendly web interface
-- Machine Learning based prediction
+---
 
-## Technologies Used
+## 🚀 Features
+
+- 🔍 Detect Scam and Safe messages
+- 📷 OCR support for screenshots
+- 📊 Confidence Score
+- 🏷️ Scam Type Detection
+- ⚠️ Safety Tips
+- 💻 Responsive User Interface
+
+---
+
+## 🛠️ Tech Stack
+
 - Python
 - Flask
-- Scikit-learn
+- HTML5
+- CSS3
 - Pandas
-- HTML
-- CSS
+- Scikit-learn
 - Tesseract OCR
+- pytesseract
+- Pillow (PIL)
 
-## Project Structure
+---
+
+## 📂 Project Structure
+
+```text
 AI-Scam-Detector/
+│
 ├── static/
+│   └── style.css
 ├── templates/
+│   └── index.html
 ├── uploads/
 ├── main.py
 ├── ocr.py
+├── scam_dataset.csv
 ├── requirements.txt
-└── scam_dataset.csv
+├── README.md
+└── .gitignore
+```
 
-## How to Run
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/KiranEkkalagari/AI-Scam-Detector.git
+```
 
 ```bash
 pip install -r requirements.txt
+```
+
+```bash
 python main.py
 ```
 
-Open:
-http://127.0.0.1:5000
+Open your browser:
 
-## Author
-**Kiran Ekkalagari** Python | Machine Learning | Flask
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## 📸 Current Features
+
+- ✅ Text Scam Detection
+- ✅ Screenshot OCR Detection
+- ✅ Confidence Score
+- ✅ Scam Type Classification
+- ✅ Safety Tips
+
+---
+
+## 🔮 Future Improvements
+
+- TF-IDF + Logistic Regression
+- Larger Training Dataset
+- AI-based Scam Explanation
+- URL Reputation Check
+- Email Scam Detection
+- Dashboard & History
+
+---
+
+## 👨‍💻 Developer
+
+**Ekkalagari Kiran**
+
+Electronics & Communication Engineering (ECE)
+
+Python | Flask | Machine Learning | OCR
+
+---
+
+⭐ If you found this project useful, consider giving it a Star.
