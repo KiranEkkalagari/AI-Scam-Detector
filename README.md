@@ -103,3 +103,15 @@ Python | Flask | Machine Learning | OCR
 ---
 
 ⭐ If you found this project useful, consider giving it a Star.
+---
+
+## 📸 Project Screenshots
+
+### 🏠 Home Page
+![Home](screenshots/Home.png)
+
+### 📄 OCR Text Detection
+![OCR](screenshots/Text-scam.png)
+
+### ✅ Safe Message Prediction
+![Safe](screenshots/safe-message.png)
