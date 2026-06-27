@@ -102,7 +102,6 @@ Python | Flask | Machine Learning | OCR
 
 ---
 
-⭐ If you found this project useful, consider giving it a Star.
 ---
 
 ## 📸 Project Screenshots
@@ -115,3 +114,5 @@ Python | Flask | Machine Learning | OCR
 
 ### ✅ Safe Message Prediction
 ![Safe](screenshots/safe-message.png)
+
+⭐ If you found this project useful, consider giving it a Star.
