@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>AI Scam Detector</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🛡 AI Scam Detector</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <textarea
+            name="message"
+            placeholder="Paste suspicious SMS, Email or WhatsApp message here..."></textarea>
+
+        <br><br>
+
+        <label><b>📷 Upload Screenshot (Optional)</b></label>
+
+        <input
+            type="file"
+            name="image"
+            accept="image/*">
+
+        <br><br>
+
+        <button type="submit">🔍 Analyze Message</button>
+
+    </form>
+
+    {% if result %}
+
+    <div class="result">
+
+        {% if result == "SCAM" %}
+            <h2 style="color:#ff4d4d;">🚨 Scam Message</h2>
+        {% else %}
+            <h2 style="color:#22c55e;">✅ Safe Message</h2>
+        {% endif %}
+
+        <h3>Confidence Score : {{ confidence }}%</h3>
+
+        <div class="progress">
+            <div class="progress-bar" style="width: {{ confidence }}%;">
+                {{ confidence }}%
+            </div>
+        </div>
+
+        <h3>Scam Type : {{ scam_type }}</h3>
+
+        {% if result == "SCAM" %}
+
+        <div class="tips">
+
+            <h3>⚠ Safety Tips</h3>
+
+            <ul>
+                <li>❌ Don't click unknown links.</li>
+                <li>❌ Never share OTP or bank details.</li>
+                <li>❌ Don't pay registration fees immediately.</li>
+                <li>✅ Verify from the official company website.</li>
+            </ul>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
